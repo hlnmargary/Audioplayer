@@ -28,13 +28,14 @@ section {
   height: 500px;
 }
 
+
 .list {
   position: absolute;
   width: 50px;
   height: 50vh;
   font-family: 'rajdhani-medium';
   font-size: 25px;
-  margin-left: 40px;
+  left: 30px;
   margin-top: 50px;
   li {
     margin-bottom: 20px;
@@ -61,11 +62,18 @@ h3 {
 
 .background {
   display: none;
+  -webkit-transition: opacity 600ms, visibility 600ms;
+  transition: opacity 600ms, visibility 600ms;
+  opacity: 0;
+  visibility: hidden;
 }
+
 
 .visible {
   display: block;
   z-index: 10;
+  visibility: visible;
+  opacity: 1;
 }
 
 .vinyle {
@@ -118,6 +126,15 @@ h3 {
 .vinyleLeft {
   -webkit-animation: slide-left 1.2s cubic-bezier(0.785, 0.135, 0.150, 0.860) both;
   animation: slide-left 1.2s cubic-bezier(0.785, 0.135, 0.150, 0.860) both;
+}
+
+@-webkit-keyframes fadeIn {
+  from { opacity: 0; }
+    to { opacity: 1; }
+}  
+@keyframes fadeIn {
+  from { opacity: 0; }
+    to { opacity: 1; }
 }
 
 @-webkit-keyframes rotate-center {

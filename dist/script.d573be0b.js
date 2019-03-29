@@ -114,7 +114,7 @@ function pauseAudio() {
 }
 
 var list = document.querySelectorAll('.list__number');
-var vinyle = document.querySelectorAll('.backgrounds');
+var pockets = document.querySelectorAll('.backgrounds li');
 var songs = document.querySelectorAll('.songs');
 var play = document.querySelector('.buttons');
 var cd = document.querySelector('.vinyle');
@@ -132,7 +132,15 @@ var _loop = function _loop(i) {
         cdImg.classList.add('vinyleRotation');
         songs[j].currentTime = 0;
         songs[j].play();
-      }
+
+        for (var k = 0; i < pockets.length; k++) {
+          if (pockets[k].dataset.pocket === songs[j].dataset.audio) {
+            pockets[k].classList.add('visible');
+          } else {
+            pockets[k].classList.remove('visible');
+          }
+        }
+      } else {}
     }
   });
 };
@@ -142,24 +150,13 @@ for (var i = 0; i < list.length; i++) {
 }
 
 ;
-
-var _loop2 = function _loop2(i) {
-  play.addEventListener('click', function () {
-    console.log('listclickok');
-
-    for (var j = 0; j < songs.length; j++) {
-      if (list[i].dataset.number === songs[j].dataset.audio) {
-        songs[j].pause();
-      }
-    }
-  });
-};
-
-for (var i = 0; i < list.length; i++) {
-  _loop2(i);
-}
-
-; // for (let i = 0; i < list.length; i++) {
+play.addEventListener('click', function () {
+  for (var j = 0; j < songs.length; j++) {
+    songs[j].pause();
+    document.querySelector('.button').innerHTML = "PLAY";
+    cdImg.classList.remove('vinyleRotation');
+  }
+}); // for (let i = 0; i < list.length; i++) {
 //   list[i].addEventListener('click', function () {
 //     console.log('listclickok');
 //     for (let j = 0; j < songs.length; j++) {
@@ -262,7 +259,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "58242" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "57388" + '/');
 
   ws.onmessage = function (event) {
     var data = JSON.parse(event.data);

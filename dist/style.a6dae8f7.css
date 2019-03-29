@@ -95,7 +95,7 @@ section {
   height: 50vh;
   font-family: "rajdhani-medium";
   font-size: 25px;
-  margin-left: 40px;
+  left: 30px;
   margin-top: 50px;
 }
 .list li {
@@ -122,11 +122,17 @@ h3 {
 
 .background {
   display: none;
+  -webkit-transition: opacity 600ms, visibility 600ms;
+  transition: opacity 600ms, visibility 600ms;
+  opacity: 0;
+  visibility: hidden;
 }
 
 .visible {
   display: block;
   z-index: 10;
+  visibility: visible;
+  opacity: 1;
 }
 
 .vinyle {
@@ -180,6 +186,22 @@ h3 {
   animation: slide-left 1.2s cubic-bezier(0.785, 0.135, 0.15, 0.86) both;
 }
 
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
 @-webkit-keyframes rotate-center {
   0% {
     -webkit-transform: rotate(0);
@@ -240,16 +262,6 @@ h3 {
     transform: translateX(-100px);
   }
 }
-.wavesImg {
-  z-index: 99;
-  width: 100%;
-  height: 299px;
-}
-.wavesImg use {
-  width: 200x;
-  height: 200px;
-}
-
 @keyframes wave {
   from {
     stroke-dasharray: 500;

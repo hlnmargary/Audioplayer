@@ -8,7 +8,7 @@ function pauseAudio() {
 
 
 var list = document.querySelectorAll('.list__number');
-var vinyle = document.querySelectorAll('.backgrounds');
+var pockets = document.querySelectorAll('.backgrounds li');
 var songs = document.querySelectorAll('.songs');
 var play = document.querySelector('.buttons');
 var cd = document.querySelector('.vinyle');
@@ -25,21 +25,29 @@ for (let i = 0; i < list.length; i++) {
         cdImg.classList.add('vinyleRotation');
         songs[j].currentTime = 0;
         songs[j].play();
+        for (let k = 0; i < pockets.length; k++) {
+          if (pockets[k].dataset.pocket === songs[j].dataset.audio) {
+            pockets[k].classList.add('visible');
+          } else {
+            pockets[k].classList.remove('visible');
+          }
+        }
+      } else {
+
       }
     }
   })
 };
 
-for (let i = 0; i < list.length; i++) {
-  play.addEventListener('click', function () {
-    console.log('listclickok');
-    for (let j = 0; j < songs.length; j++) {
-      if (list[i].dataset.number === songs[j].dataset.audio) {
-        songs[j].pause();
-      }
-    }
-  })
-};
+
+
+play.addEventListener('click', function () {
+  for (let j = 0; j < songs.length; j++) {
+    songs[j].pause();
+    document.querySelector('.button').innerHTML = "PLAY";
+    cdImg.classList.remove('vinyleRotation');
+  }
+});
 
 
 
