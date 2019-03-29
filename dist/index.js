@@ -171,12 +171,7 @@ function reloadCSS() {
 }
 
 module.exports = reloadCSS;
-},{"./bundle-url":"../node_modules/parcel-bundler/src/builtins/bundle-url.js"}],"scss/style.scss":[function(require,module,exports) {
-var reloadCSS = require('_css_loader');
-
-module.hot.dispose(reloadCSS);
-module.hot.accept(reloadCSS);
-},{"./../assets/font/rajdhani-bold-webfont.woff2":[["rajdhani-bold-webfont.f0800e10.woff2","assets/font/rajdhani-bold-webfont.woff2"],"assets/font/rajdhani-bold-webfont.woff2"],"./../assets/font/rajdhani-bold-webfont.woff":[["rajdhani-bold-webfont.583a1957.woff","assets/font/rajdhani-bold-webfont.woff"],"assets/font/rajdhani-bold-webfont.woff"],"./../assets/font/rajdhani-light-webfont.woff2":[["rajdhani-light-webfont.1438885f.woff2","assets/font/rajdhani-light-webfont.woff2"],"assets/font/rajdhani-light-webfont.woff2"],"./../assets/font/rajdhani-light-webfont.woff":[["rajdhani-light-webfont.5043d3d7.woff","assets/font/rajdhani-light-webfont.woff"],"assets/font/rajdhani-light-webfont.woff"],"./../assets/font/rajdhani-medium-webfont.woff2":[["rajdhani-medium-webfont.546ea3af.woff2","assets/font/rajdhani-medium-webfont.woff2"],"assets/font/rajdhani-medium-webfont.woff2"],"./../assets/font/rajdhani-medium-webfont.woff":[["rajdhani-medium-webfont.2e3620d4.woff","assets/font/rajdhani-medium-webfont.woff"],"assets/font/rajdhani-medium-webfont.woff"],"./../assets/font/rajdhani-regular-webfont.woff2":[["rajdhani-regular-webfont.8230fadf.woff2","assets/font/rajdhani-regular-webfont.woff2"],"assets/font/rajdhani-regular-webfont.woff2"],"./../assets/font/rajdhani-regular-webfont.woff":[["rajdhani-regular-webfont.a89067a1.woff","assets/font/rajdhani-regular-webfont.woff"],"assets/font/rajdhani-regular-webfont.woff"],"./../assets/font/rajdhani-semibold-webfont.woff2":[["rajdhani-semibold-webfont.17ce8007.woff2","assets/font/rajdhani-semibold-webfont.woff2"],"assets/font/rajdhani-semibold-webfont.woff2"],"./../assets/font/rajdhani-semibold-webfont.woff":[["rajdhani-semibold-webfont.c065939f.woff","assets/font/rajdhani-semibold-webfont.woff"],"assets/font/rajdhani-semibold-webfont.woff"],"_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+},{"./bundle-url":"../node_modules/parcel-bundler/src/builtins/bundle-url.js"}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;

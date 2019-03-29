@@ -141,6 +141,8 @@ for (var i = 0; i < list.length; i++) {
   _loop(i);
 }
 
+;
+
 var _loop2 = function _loop2(i) {
   play.addEventListener('click', function () {
     console.log('listclickok');
@@ -155,7 +157,9 @@ var _loop2 = function _loop2(i) {
 
 for (var i = 0; i < list.length; i++) {
   _loop2(i);
-} // for (let i = 0; i < list.length; i++) {
+}
+
+; // for (let i = 0; i < list.length; i++) {
 //   list[i].addEventListener('click', function () {
 //     console.log('listclickok');
 //     for (let j = 0; j < songs.length; j++) {
@@ -258,7 +262,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "56873" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "58242" + '/');
 
   ws.onmessage = function (event) {
     var data = JSON.parse(event.data);

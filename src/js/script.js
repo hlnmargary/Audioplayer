@@ -28,7 +28,7 @@ for (let i = 0; i < list.length; i++) {
       }
     }
   })
-}
+};
 
 for (let i = 0; i < list.length; i++) {
   play.addEventListener('click', function () {
@@ -39,7 +39,12 @@ for (let i = 0; i < list.length; i++) {
       }
     }
   })
-}
+};
+
+
+
+
+
 
 
 

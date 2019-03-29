@@ -240,3 +240,82 @@ h3 {
     transform: translateX(-100px);
   }
 }
+.wavesImg {
+  z-index: 99;
+  width: 100%;
+  height: 299px;
+}
+.wavesImg use {
+  width: 200x;
+  height: 200px;
+}
+
+@keyframes wave {
+  from {
+    stroke-dasharray: 500;
+    stroke-dashoffset: 2000;
+  }
+  to {
+    stroke-dashoffset: 0;
+    stroke-dasharray: 500;
+  }
+}
+@keyframes wave2 {
+  from {
+    stroke-dasharray: 500;
+    stroke-dashoffset: 4000;
+  }
+  to {
+    stroke-dashoffset: 0;
+    stroke-dasharray: 500;
+  }
+}
+section {
+  width: 50%;
+  margin: 10px auto;
+}
+
+svg {
+  border: 1px solid black;
+}
+
+.palm {
+  transform: translateY(70px);
+}
+
+.sun {
+  fill: none;
+  stroke: black;
+  stroke-width: 2;
+  transform: translateY(50px);
+}
+
+.wave01, .wave02, .wave03, .wave04 {
+  fill: none;
+  stroke: black;
+  stroke-width: 2;
+}
+
+.wave01 {
+  transform: translateY(300px);
+}
+
+.wave02 {
+  transform: translateY(400px) translateX(200px);
+}
+
+.wave03 {
+  transform: translateY(500px);
+}
+
+.wave04 {
+  transform: translateY(600px) translateX(200px);
+}
+
+.wave01, .wave03 {
+  animation: wave 4s linear infinite;
+}
+
+.wave02, .wave04 {
+  animation: wave2 6s linear infinite;
+}
