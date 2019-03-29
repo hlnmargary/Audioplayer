@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="345px" height="326px" viewBox="0 0 345 326" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.2 (67145) - http://www.bohemiancoding.com/sketch -->
+    <title>Group</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <filter x="-17.5%" y="-16.1%" width="135.4%" height="127.1%" filterUnits="objectBoundingBox" id="filter-1">
+            <feOffset dx="0" dy="0" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.504019475 0" type="matrix" in="shadowOffsetOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+        <ellipse id="path-2" cx="137" cy="140" rx="137" ry="140"></ellipse>
+        <filter x="-7.7%" y="-8.2%" width="119.7%" height="119.3%" filterUnits="objectBoundingBox" id="filter-3">
+            <feMorphology radius="0.5" operator="dilate" in="SourceAlpha" result="shadowSpreadOuter1"></feMorphology>
+            <feOffset dx="6" dy="4" in="shadowSpreadOuter1" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="7.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.5 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <filter x="-39.9%" y="-45.3%" width="179.9%" height="190.7%" filterUnits="objectBoundingBox" id="filter-4">
+            <feGaussianBlur stdDeviation="17" in="SourceGraphic"></feGaussianBlur>
+        </filter>
+        <filter x="-39.9%" y="-39.0%" width="179.9%" height="178.1%" filterUnits="objectBoundingBox" id="filter-5">
+            <feGaussianBlur stdDeviation="17" in="SourceGraphic"></feGaussianBlur>
+        </filter>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Artboard" transform="translate(-821.000000, 0.000000)">
+            <g id="Group" filter="url(#filter-1)" transform="translate(855.000000, 26.000000)">
+                <g id="Oval">
+                    <use fill="black" fill-opacity="1" filter="url(#filter-3)" xlink:href="#path-2"></use>
+                    <use fill="#000000" fill-rule="evenodd" xlink:href="#path-2"></use>
+                </g>
+                <ellipse id="Oval" stroke="#979797" fill="#000000" cx="137" cy="140" rx="124.585761" ry="127.313916"></ellipse>
+                <ellipse id="Oval" stroke="#979797" fill="#000000" cx="137.443366" cy="140.453074" rx="117.935275" ry="120.517799"></ellipse>
+                <ellipse id="Oval" stroke="#979797" fill="#FFFFFF" cx="137" cy="140" rx="87.3430421" ry="89.2556634"></ellipse>
+                <ellipse id="Oval" stroke="#000000" fill="#000000" cx="137.443366" cy="140.453074" rx="57.6375405" ry="58.8996764"></ellipse>
+                <ellipse id="Oval" stroke="#979797" fill="#FFFFFF" cx="137" cy="140" rx="7.53721683" ry="7.70226537"></ellipse>
+                <path d="M131.434187,146.672334 L61.2617256,259.158576 C31.2420476,238.77898 12.0661042,209.782216 3.73389519,172.168285" id="Path-2" fill="#FFFFFF" opacity="0.353678385" filter="url(#filter-4)"></path>
+                <path d="M271.350777,6.34304207 L201.178316,136.952261 C171.158638,113.28925 151.982694,79.6207356 143.650485,35.9467173" id="Path-2" fill="#FFFFFF" opacity="0.391438802" filter="url(#filter-5)" transform="translate(207.500631, 71.647652) scale(-1, -1) translate(-207.500631, -71.647652) "></path>
+            </g>
+        </g>
+    </g>
+</svg>

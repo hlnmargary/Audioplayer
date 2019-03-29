@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>AlsoSounds</title>
+  <link rel="stylesheet" href="scss/style.scss">
+  <script defer src="js/script.js" title="script"></script>
+</head>
+
+<body>
+  <header>
+    <h1 class="title">A/S</h1>
+  </header>
+  <section>
+    <!-- LISTE -->
+    <div class="list">
+      <ul class="list__numbers">
+        <li data-number="her" class="list__number">01</li>
+        <li data-number="theblaze" class="list__number">02</li>
+        <li data-number="alphaville" class="list__number">03</li>
+        <li data-number="bronskibeat" class="list__number">04</li>
+        <li data-number="lescops" class="list__number">05</li>
+      </ul>
+    </div>
+
+    <!-- VINYLES -->
+    <div class="pocket">
+      <ul class="backgrounds">
+        <li data-vinyle="her" class="background visible">
+          <h3>01</h3>
+          <audio data-audio="her" class="songs listening" control preload="metadata" loop
+            src="../src/assets/musics/her.mp3"></audio>
+        </li>
+        <li data-vinyle="theblaze" class="background">
+          <h3>02</h3>
+          <audio data-audio="theblaze" class="songs" control preload="metadata" loop
+            src="../src/assets/musics/theblaze.mp3"></audio>
+        </li>
+        <li data-vinyle="alphaville" class="background">
+          <h3>03</h3>
+          <audio data-audio="alphaville" class="songs listening" control preload="metadata" loop
+            src="../src/assets/musics/alphaville-forever-young-official-video.mp3"></audio>
+        </li>
+        <li data-vinyle="bronskibeat" class="background">
+          <h3>04</h3>
+          <audio data-audio="bronskibeat" class="songs listening" control preload="metadata" loop
+            src="../src/assets/musics/bronski-beat-smalltown-boy.mp3"></audio>
+        </li>
+        <li data-vinyle="lescops" class="background">
+          <h3>05</h3>
+          <audio data-audio="lescops" class="songs listening" control preload="metadata" loop
+            src="../src/assets/musics/lescop-la-foret.mp3"></audio>
+        </li>
+      </ul>
+      <div class="vinyle">
+        <img class="vinyle__img" src="../src/assets/img/vinyle3.svg" alt="vinyle">
+      </div>
+    </div>
+    <div class="timer-container">
+      <div class="timer"></div>
+    </div>
+    <div class="buttons">
+      <h2 id="play" class="button">PLAY</h2>
+      <h2 id="stop" class="button visible">STOP</h2>
+    </div>
+  </section>
+</body>
+
+</html>

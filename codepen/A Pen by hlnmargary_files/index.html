@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<!-- saved from url=(0101)https://s.codepen.io/boomerang/iFrameKey-8ada8d37-c108-dde8-8bf9-96444b80b2e5/index.html?editors=0110 -->
+<html lang="en" class=""><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><script src="./console_runner-1df7d3399bdc1f40995a35209755dcfd8c7547da127f6469fd81e5fba982f6af.js"></script><script src="./css_reload-5619dc0905a68b2e6298901de54f73cefe4e079f65a75406858d92924b4938bf.js"></script><meta name="robots" content="noindex"><link rel="shortcut icon" type="image/x-icon" href="https://static.codepen.io/assets/favicon/favicon-8ea04875e70c4b0bb41da869e81236e54394d63638a1ef12fa558a4a835f1164.ico"><link rel="mask-icon" type="" href="https://static.codepen.io/assets/favicon/logo-pin-f2d2b6d2c61838f7e76325261b7195c27224080bc099486ddd6dccb469b8e8e6.svg" color="#111"><link rel="canonical" href="https://codepen.io/hlnmargary/pen/omLVYR?editors=0110">
+
+
+<style class="cp-pen-styles">body {
+  background-color: white;
+}
+
+.move-left {
+  width: 60px;
+  height: 40px;
+  position: absolute;
+  top:47%;
+  left: 25%;
+}
+.button-left {
+  width: 30px;
+  height: 3px;
+  position: absolute;
+  top:50%;
+  left: 25%;
+  background-color: black;
+}
+
+.move-right {
+  width: 60px;
+  height: 40px;
+  position: absolute;
+  top:47%;
+  right: 25%;
+}
+.button-right {
+  width: 30px;
+  height: 3px;
+  position: absolute;
+  top:50%;
+  right: 25%;
+  background-color: black;
+}
+
+.animation-left {
+  animation: animation-left 2s ;
+
+}
+
+.animation-right {
+  animation:  animation-right 2s linear;
+
+}
+
+.animation-top {
+  animation:  animation-top 3s linear;
+
+}
+
+.move-bottom {
+  width: 180px;
+  height: 180px;
+  animation:  animation-bottom 3s linear infinite;
+  animation-delay: 1s;
+}
+
+.square {
+  border: 5px solid black;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+  width: 200px;
+  height: 200px;
+}
+
+
+@keyframes animation-left {
+    0% { transform: perspective(200px) rotateY(-180deg); }
+  }
+@keyframes animation-right {
+    0% { 
+      transform: perspective(200px) rotateY(180deg); }
+  }
+@keyframes animation-3 
+  0% {
+    transform: perspective(200px) rotateY(-180deg);
+  }    
+ @keyframes animation-4 
+  100% {
+    transform: perspective(200px) rotateY(180deg);
+  }</style></head><body>
+<div id="square" class="square animation-right animation-left"></div>
+<div id="left" class="move-left">
+  <div class="button-left"></div>
+</div>
+<div id="right" class="move-right">
+  <div class="button-right"></div>
+</div>
+<div id="top" class="move-top">
+  <div class="button-top"></div>
+</div>
+<div id="bottom" class="move-bottom">
+  <div class="butto-bottom"></div>
+</div>
+ 
+ 
+<script src="./stopExecutionOnTimeout-de7e2ef6bfefd24b79a3f68b414b87b8db5b08439cac3f1012092b2290c719cd.js"></script>
+<script>var currentposition =
+
+document.getElementById('left').addEventListener('click', function () {
+  square.classList.toggle('animation-left');
+});
+
+document.getElementById('right').addEventListener('click', function () {
+  square.classList.toggle('animation-right');
+});
+
+document.getElementById('top').addEventListener('click', function () {
+  square.classList.toggle('animation-top');
+});
+//# sourceURL=pen.js
+</script>
+</body></html>
